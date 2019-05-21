@@ -1,0 +1,4 @@
+brm\web\repository\ProductRepository.class
+brm\web\model\Product.class
+brm\web\services\ProductService.class
+brm\web\controler\HomeController.class
