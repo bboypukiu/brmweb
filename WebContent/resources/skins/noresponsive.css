@@ -1,0 +1,15 @@
+/* Công ty cổ phần Angkorich
+ * Bootstrap v3.3.7
+ * Copyright 2018 by Angkorich
+ * Edit code bootstrap by linhlv.akr@gmail.com
+ */
+.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+@media (min-width: 1200px) {
+.container{width:1200px}
+}
+@media (min-width: 1360px) {
+.container{width:1200px}
+}
+@media (min-width: 1600px) {
+.container{width:1200px}
+}

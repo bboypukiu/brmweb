@@ -17,8 +17,8 @@
 
 	<context:component-scan base-package="brm.web" />
     <jpa:repositories base-package="brm.web.repository" />
-	<context:annotation-config />
-    
+	<context:annotation-config /> 
+    <mvc:annotation-driven />
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 	<mvc:annotation-driven />
 	

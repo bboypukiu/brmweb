@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Csm Dashboard</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="=" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="css/custom.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" /> </head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+    <div class="page-wrapper">
+        <!-- BEGIN HEADER -->
+        <div class="page-header navbar navbar-fixed-top">
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner ">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="index.html">
+                        <span class="logo-csm logo-default">BeRichMart</span>
+					</a>
+                    <div class="menu-toggler sidebar-toggler">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span></span>
+                    </a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <!-- BEGIN TOP NAVIGATION MENU -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class="icon-bell"></i>
+                                    <span class="badge badge-default"> 2 </span>
+                                </a>
+                            <ul class="dropdown-menu">
+                                <li class="external">
+                                    <h3><span class="bold">2</span> Thông báo mới</h3>
+                                </li>
+                                <li>
+                                    <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
+
+                                        <li>
+                                            <a href="javascript:;">
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-warning">
+                                                            <i class="fa fa-bell-o"></i>
+                                                        </span> Bạn đã nhận được hoa hồng </span>
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+												<span class="details">
+													<span class="label label-sm label-icon label-warning">
+														<i class="fa fa-bell-o"></i>
+													</span> Số dư của bạn đã thay đổi 
+												</span>
+											</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <img alt="" class="img-circle" src="img/avatar3_small.jpg" />
+                                    <span class="username username-hide-on-mobile"> Nguyễn Hữu Thành </span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+								<li>
+                                    <a href="page_user_profile_1.html">
+                                        <i class="icon-users"></i> Quản lý thành viên
+									</a>
+                                </li>
+                                <li>
+                                    <a href="page_user_profile_1.html">
+                                        <i class="icon-user"></i> Tài khoản của tôi
+									</a>
+                                </li>
+                                <li>
+                                    <a href="page_user_login_1.html">
+                                        <i class="icon-key"></i> Đăng xuất
+									</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-quick-sidebar-toggler">
+                            <a href="javascript:;" class="dropdown-toggle">
+								<i class="icon-logout"></i>
+							</a>
+                        </li>
+                        <!-- END QUICK SIDEBAR TOGGLER -->
+                    </ul>
+                </div>
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+            <!-- END HEADER INNER -->
+        </div>
+        <!-- END HEADER -->
+        <!-- BEGIN HEADER & CONTENT DIVIDER -->
+        <div class="clearfix"> </div>
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <div class="page-sidebar navbar-collapse collapse">
+					<ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                        <li class="sidebar-toggler-wrapper hide">
+                            <div class="sidebar-toggler">
+                                <span></span>
+                            </div>
+                        </li>
+                        <li class="nav-item start active">
+                            <a href="index.html" class="nav-link nav-toggle">
+								<i class="icon-home"></i>
+								<span class="title">Trình quản lý</span>
+                            </a>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="doanhthuhoahong.html" class="nav-link nav-toggle">
+                                <i class="fa fa-money"></i>
+                                <span class="title">Doanh thu hoa hồng</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="caythanhvien.html" class="nav-link nav-toggle">
+                                <i class="fa fa-users"></i>
+                                <span class="title">Cây thành viên</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="DS_thanhviengioithieu.html" class="nav-link nav-toggle">
+                                <i class="fa fa-list-ul"></i>
+                                <span class="title">DS thành viên giới thiệu</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="lichsuhoahong.html" class="nav-link nav-toggle">
+                                <i class="fa fa-history"></i>
+                                <span class="title">Lịch sử hoa hồng</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="quanly_hoadon.html" class="nav-link nav-toggle">
+                                <i class="fa fa-file-text-o"></i>
+                                <span class="title">Quản lý hóa đơn</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="user_index.html" class="nav-link nav-toggle">
+                                <i class="icon-settings"></i>
+                                <span class="title">Quản lý tài khoản</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                    </ul>
+				</div>
+            </div>
+            <div class="page-content-wrapper">
+                <!-- BEGIN CONTENT BODY -->
+                <div class="page-content">
+                    <div class="page-bar">
+                        <ul class="page-breadcrumb">
+                            <li>
+                                <a href="index.html">Home</a>
+                                <i class="fa fa-circle"></i>
+                            </li>
+                            <li>
+                                <span>Dashboard</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END PAGE BAR -->
+                    <!-- BEGIN PAGE TITLE-->
+                    <h1 class="page-title"> Chào mừng bạn đã đăng nhập
+                        <small>Hệ thống quản trị thông tin tài khoản, thành viên của bạn !</small>
+                    </h1>
+
+                </div>
+                <!-- END CONTENT BODY -->
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="page-footer-inner"> 2018 &copy; code by webviet24h </div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+    </div>
+    <!-- BEGIN QUICK NAV -->
+    <div class="quick-nav-overlay"></div>
+
+    <!-- END QUICK NAV -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="js/morris/morris.min.js" type="text/javascript"></script>
+    <script src="js/app.min.js" type="text/javascript"></script>
+    <script src="js/layout.min.js" type="text/javascript"></script>
+    <script src="js/quick-sidebar.min.js" type="text/javascript"></script>
+    <script src="js/quick-nav.min.js" type="text/javascript"></script>
+    <!-- END THEME LAYOUT SCRIPTS -->
+</body>
+
+</html>

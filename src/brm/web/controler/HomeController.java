@@ -14,7 +14,7 @@ public class HomeController {
 	@Autowired
 	ProductService proSevice;
 	
-	@RequestMapping(value = { "/"})
+	@RequestMapping(value = { "/1"})
 	public String listCustomer(Model model) {
 		
 		model.addAttribute("listCustomer", proSevice.findAll());

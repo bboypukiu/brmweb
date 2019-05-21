@@ -1,0 +1,29 @@
+﻿/* Công ty cổ phần Angkorich
+ * Bootstrap v3.3.7
+ * Copyright 2018 by Angkorich
+ * Edit code bootstrap by linhlv.akr@gmail.com
+ */
+/*------------------------ Mobile ------------------------------*/
+@media (max-width : 480px){
+	
+}
+/*------------------------ iphone ----------------------------*/
+@media (min-width: 320px) {
+	
+}
+/*------------------------ mobile and ipad ---------------------*/
+@media (max-width: 768px){
+	
+}
+/*------------------------ ipad chiều dọc ----------------------*/
+@media (min-width: 768px) and (max-width: 991px){
+	
+}
+/*------------------------ ipad chiều ngang ----------------------*/
+@media (min-width: 992px) and (max-width: 1280px){
+	
+}
+/*------------------------ PC ----------------------*/
+@media (min-width: 1281px){
+	
+}
