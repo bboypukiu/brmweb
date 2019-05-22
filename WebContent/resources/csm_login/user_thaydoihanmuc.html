@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Csm Dashboard</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="=" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    
+    <link href="css/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/profile.min.css" rel="stylesheet" type="text/css" />
+    
+    <link href="css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="css/custom.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" /> </head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-container-bg-solid page-sidebar-closed">
+    <div class="page-wrapper">
+        <!-- BEGIN HEADER -->
+        <div class="page-header navbar navbar-fixed-top">
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner ">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="index.html">
+                        <span class="logo-csm logo-default">BeRichMart</span>
+					</a>
+                    <div class="menu-toggler sidebar-toggler">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span></span>
+                    </a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <!-- BEGIN TOP NAVIGATION MENU -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class="icon-bell"></i>
+                                    <span class="badge badge-default"> 2 </span>
+                                </a>
+                            <ul class="dropdown-menu">
+                                <li class="external">
+                                    <h3><span class="bold">2</span> Thông báo mới</h3>
+                                </li>
+                                <li>
+                                    <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
+
+                                        <li>
+                                            <a href="javascript:;">
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-warning">
+                                                            <i class="fa fa-bell-o"></i>
+                                                        </span> Bạn đã nhận được hoa hồng </span>
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+												<span class="details">
+													<span class="label label-sm label-icon label-warning">
+														<i class="fa fa-bell-o"></i>
+													</span> Số dư của bạn đã thay đổi 
+												</span>
+											</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <img alt="" class="img-circle" src="img/avatar3_small.jpg" />
+                                    <span class="username username-hide-on-mobile"> Nguyễn Hữu Thành </span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+								<li>
+                                    <a href="page_user_profile_1.html">
+                                        <i class="icon-users"></i> Quản lý thành viên
+									</a>
+                                </li>
+                                <li>
+                                    <a href="page_user_profile_1.html">
+                                        <i class="icon-user"></i> Tài khoản của tôi
+									</a>
+                                </li>
+                                <li>
+                                    <a href="page_user_login_1.html">
+                                        <i class="icon-key"></i> Đăng xuất
+									</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-quick-sidebar-toggler">
+                            <a href="javascript:;" class="dropdown-toggle">
+								<i class="icon-logout"></i>
+							</a>
+                        </li>
+                        <!-- END QUICK SIDEBAR TOGGLER -->
+                    </ul>
+                </div>
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+            <!-- END HEADER INNER -->
+        </div>
+        <!-- END HEADER -->
+        <!-- BEGIN HEADER & CONTENT DIVIDER -->
+        <div class="clearfix"> </div>
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <div class="page-sidebar navbar-collapse collapse">
+					<ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-closed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                        <li class="sidebar-toggler-wrapper hide">
+                            <div class="sidebar-toggler">
+                                <span></span>
+                            </div>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="index.html" class="nav-link nav-toggle">
+								<i class="icon-home"></i>
+								<span class="title">Trình quản lý</span>
+                            </a>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="doanhthuhoahong.html" class="nav-link nav-toggle">
+                                <i class="fa fa-money"></i>
+                                <span class="title">Doanh thu hoa hồng</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="caythanhvien.html" class="nav-link nav-toggle">
+                                <i class="fa fa-users"></i>
+                                <span class="title">Cây thành viên</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="DS_thanhviengioithieu.html" class="nav-link nav-toggle">
+                                <i class="fa fa-list-ul"></i>
+                                <span class="title">DS thành viên giới thiệu</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="lichsuhoahong.html" class="nav-link nav-toggle">
+                                <i class="fa fa-history"></i>
+                                <span class="title">Lịch sử hoa hồng</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item start">
+                            <a href="quanly_hoadon.html" class="nav-link nav-toggle">
+                                <i class="fa fa-file-text-o"></i>
+                                <span class="title">Quản lý hóa đơn</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item start active">
+                            <a href="user_index.html" class="nav-link nav-toggle">
+                                <i class="icon-settings"></i>
+                                <span class="title">Quản lý tài khoản</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                    </ul>
+				</div>
+            </div>
+            <div class="page-content-wrapper">
+                <!-- BEGIN CONTENT BODY -->
+                <div class="page-content">
+                    <div class="page-bar">
+                        <ul class="page-breadcrumb">
+                            <li>
+                                <a href="index.html">Trình quản lý</a>
+                                <i class="fa fa-circle"></i>
+                            </li>
+                            <li>
+                                <a href="index.html">Cài đặt tài khoản</a>
+                                <i class="fa fa-circle"></i>
+                            </li>
+                            <li>
+                                <span>Thay đổi hạn mức</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END PAGE BAR -->
+                    <!-- BEGIN PAGE TITLE-->
+
+                    <div class="row mt20">
+                        <div class="col-md-12">
+                            <!-- BEGIN PROFILE SIDEBAR -->
+                            <div class="profile-sidebar">
+                                <!-- PORTLET MAIN -->
+                                <div class="portlet light profile-sidebar-portlet ">
+                                    <!-- SIDEBAR USERPIC -->
+                                    <div class="profile-userpic">
+                                        <img src="img/profile.jpg" class="img-responsive" alt=""> </div>
+                                    <!-- END SIDEBAR USERPIC -->
+                                    <!-- SIDEBAR USER TITLE -->
+                                    <div class="profile-usertitle">
+                                        <div class="profile-usertitle-name"> Nguyễn Hữu Thành </div>
+                                        <div class="profile-usertitle-job"> Cấp độ: Chính thức </div>
+                                    </div>
+                                    <!-- END SIDEBAR USER TITLE -->
+                                    <!-- SIDEBAR BUTTONS -->
+                                    <div class="profile-userbuttons">
+                                        <button type="button" class="btn btn-circle red btn-sm">Chi tiết hoa hồng</button>
+                                    </div>
+                                    <!-- END SIDEBAR BUTTONS -->
+                                    <!-- SIDEBAR MENU -->
+                                    <div class="profile-usermenu">
+                                        <ul class="nav">
+                                            <li class="">
+                                                <a href="user_index.html">
+                                                    <i class="icon-info"></i>&nbsp;Thông tin tài khoản 
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="user_thongtinthe.html">
+                                                    <i class="fa fa-cc-visa"></i>&nbsp;Quản lý thông tin thẻ
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="user_chuyenkhoan.html">
+                                                    <i class="fa fa-exchange"></i>&nbsp;Chuyển khoản
+                                                </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="user_thaydoihanmuc.html">
+                                                    <i class="fa fa-balance-scale"></i>&nbsp;Thay đổi hạn mức CK
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="user_muathe.html">
+                                                    <i class="fa fa-credit-card"></i>&nbsp;Mua thẻ
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="user_thaydoi_otp.html">
+                                                    <i class="fa fa-phone-square"></i>&nbsp;Thay đổi số điện thoại OTP
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="user_thaydoithongtin.html">
+                                                    <i class="fa fa-list-alt"></i>&nbsp;Thay đổi thông tin tài khoản
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="">
+                                                    <i class="fa fa-book"></i>&nbsp;Hướng dẫn sử dụng
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="user_index.html">
+                                                    <i class="fa fa-print"></i>&nbsp;In trang này
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END MENU -->
+                                </div>
+                                <!-- END PORTLET MAIN -->
+                            </div>
+                            <!-- END BEGIN PROFILE SIDEBAR -->
+                            <!-- BEGIN PROFILE CONTENT -->
+                            <div class="profile-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!-- BEGIN PORTLET -->
+                                        <div class="portlet light" style="min-height: 388px;">
+                                            <div class="portlet-title">
+                                                <div class="caption caption-md">
+                                                    <i class="icon-bar-chart theme-font hide"></i>
+                                                    <span class="caption-subject font-blue-madison bold uppercase">Đăng ký sử dụng dịch vụ chuyển khoản</span>
+                                                </div>
+                                            </div>
+                                            <div class="portlet-body">
+                                                <form action="" method="get" accept-charset="utf-8">
+                                                    <p><strong>Tên tôi là:&nbsp;</strong>NGUYỄN HỮU THÀNH</p>
+                                                    <p><strong>Tôi đăng ký hạn mức chuyển khoản trong ngày trên chương trình VCB như sau:</strong></p>
+                                                    <div class="mt-radio-list">
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="rdo-hanmuc" id="hanmuc1" value="option1" checked=""> 20.000.000 VNĐ(Hai mươi triệu đồng)
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="rdo-hanmuc" id="hanmuc2" value="option2"> 50.000.000 VNĐ(Năm mươi triệu đồng)
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="portlet box blue-hoki">
+                                                        <div class="portlet-title">
+                                                            <div class="caption">
+                                                                Hợp đồng sử dụng dịch vụ NHDT: 
+                                                            </div>
+                                                        </div>
+                                                        <div class="portlet-body">
+                                                            <div class="scroller" style="height:400px;line-height: 1.6" data-rail-visible="1" data-rail-color="yellow" data-handle-color="#a1b2bd">
+                                                                <p style="margin-top: 0px;">Quy định tham gia phát triển hệ thống người tiêu dùng tại Công ty cổ phần TMDV BeRichMart Việt Nam. Bằng việc đăng ký tham gia trở thành Thành Viên của Công ty, Bạn đồng ý chấp nhận và tuân thủ các quy định sau đây:<br> <strong class="blue">1. Thông tin cá nhân:</strong><br> - Thành viên đồng ý cung cấp cho Công ty cổ phần TMDV BeRichMart Việt Nam các thông tin trung thực về bản thân bằng cách điền vào "Phiếu đăng ký" và "Hồ sơ". Các thông tin này sẽ giúp Công ty thực hiện tốt hơn việc quản lý hồ sơ và công tác chăm sóc khách hàng.<br> - BeRichMart cam kết bảo mật thông tin cá nhân của thành viên và chỉ cung cấp cho bên thứ 3 khi có sự đồng ý của thành viên.<br><br> <strong class="blue">2. Quyền lợi Thành viên:</strong><br> - Thành viên được sử dụng các tiện ích của Công ty:<br> - Các giao dịch thanh toán trên tài khoản thanh toán BRM.<br> - Hưởng quyền lợi về chính sách bán hàng dành cho Thành viên :<br> - Hoa hồng tiêu dùng 10% khi thành viên thanh toán bằng thẻ và 5% khi thành viên thanh toán bằng tiền mặt (trừ thẳng vào đơn hàng khi mua hàng áp dụng cho tất cả các thành viên chính thức và thành viên kết nối)<br> - Hoa hồng giới thiệu Thành viên.<br> - Hoa hồng thụ động.<br> - Được tham gia quỹ thưởng dành cho Thành viên.<br> - Được chuyển đổi hoa hồng thành tiền mặt.<br> - Được cấp văn phòng làm việc tại website: www.BeRichMart.com.vn<br><br> <strong class="blue">3. Nghĩa vụ Thành viên:</strong><br> a. Thanh toán tiền hàng đầy đủ cho Công ty.<br> b. Tư vấn chính xác về chính sách bán hàng và chế độ trả thưởng của Công ty.<br> c. Thành viên có trách nhiệm hướng dẫn, hỗ trợ Thành viên trực thuộc hệ thống Thành viên của mình.<br> d. Cung cấp đầy đủ, chính xác thông tin xác thực thành viên trực thuộc hệ thống Thành viên của Công ty BRM.<br><br> <strong class="blue">4. Những điều khoản cấm:</strong><br> a. Nghiêm cấm tuyệt đối việc đăng ký giả mạo hoặc dùng nhiều địa chỉ chứng minh thư khác nhau để đăng ký nhiều tài khoản cho một người.<br> b. Thành viên sẽ không được phép sử dụng bất kỳ nhãn hiệu thương mại, tên, biểu tượng, khẩu ngữ của Công ty vào mục đích khác mà không được sự đồng ý của Công ty ngoài việc phân phối, quảng cáo như đã được Công ty đồng ý.<br> c. Nghiêm cấm tuyệt đối việc dùng danh nghĩa Công ty cổ phần TMDV BeRichMart Việt Nam và lợi dụng mạng lưới thành viên của Công ty vào mục đích cá nhân, để quảng bá các chương trình kinh doanh không có liên quan đến Công ty bằng e-mail hoặc trên mạng Internet.<br> d. Công ty cổ phần TMDV BeRichMart Việt Nam sẽ áp dụng các chế tài xử lý vi phạm đối với các trường hợp vi phạm những điều khoản nói trên. Các chế tài xử lý vi phạm có thể là cảnh cáo, phạt tiền, xóa tài khoản vĩnh viễn khỏi danh sách thành viên hoặc tổng hợp cả 3 biện pháp trên. Việc lựa chọn biện pháp phạt phụ thuộc vào mức độ và số lần vi phạm của thành viên. <br> <strong class="blue">5. Hủy bỏ tài khoản:</strong><br> a. Thành viên có quyền thông báo cho Công ty cổ phần TMDV BeRichMart Việt Nam về quyết định ngừng tham gia phát triển hệ thống mạng lưới vào bất cứ lúc nào. Trường hợp này đồng nghĩa với việc Thành viên đồng ý hủy bỏ toàn bộ những quyền lợi của mình với tư cách là thành viên hệ thống tính đến thời điểm đó.<br> b. Công ty cổ phần TMDV BeRichMart Việt Nam có quyền xóa tài khoản của Bạn nếu tài khoản đó không có hoạt động mua hàng trong vòng 6 tháng<br> c. Công ty cổ phần TMDV BeRichMart Việt Nam có quyền xóa tên và tài khoản của Bạn nếu Bạn có những hành động đi ngược lại với quyền lợi của công ty như nêu trong mục 4 ("Những điều khoản cấm").<br> d. Trong trường hợp tài khoản bị xóa vì các lý do nêu trên, việc đăng ký lại tài khoản khác tại Công ty cổ phần TMDV BeRichMart Việt Nam chỉ có thể được thực hiện sau thời gian ít nhất là 6 tháng. <br> e. Trong trường hợp thành viên không nâng cấp lên thành viên chính thức thì công ty có thể thay thế hoặc xóa bỏ bất cứ lúc nào.<br><br> <strong class="blue">6. Các quy định khác:</strong><br> a. Khi quý khách giới thiệu cho khách hàng, quý khách tuyệt đối phải giới thiệu một cách trung thực.<br> b. Công ty cổ phần TMDV BeRichMart Việt Nam có quyền thay đổi điều kiện và phương thức rút tiền và thông báo đến thành viên bằng việc công bố công khai trên website hoặc gửi tin nhắn tới mã số Thành viên .<br> c. Công ty cổ phần TMDV BeRichMart Việt Nam có thể bổ sung, mở rộng hoặc thu hẹp các chương trình kinh doanh theo nhu cầu. Những thay đổi (nếu có) sẽ được thông báo đến các Thành viên bằng tin nhắn về mã số Thành viên hoặc công bố trên website và chỉ được áp dụng từ sau ngày công bố. <br><br> <strong class="blue">7. Thuế (Thuế Giá Trị Gia Tăng và Thuế Thu Nhập cá nhân)</strong> 7.1. Mỗi bên tự chịu trách nhiệm đối với các nghĩa vụ thuế của mình trước cơ quan thuế của Việt Nam theo quy định của phát luật. khi được BeRichMart yêu cầu, các Thành viên sẽ phải cung cấp các bằng chứng chứng minh mình đã hoàn thành các nghĩa vụ thuế (nếu có). Theo quy định của pháp luật, BeRichMart sẽ khấu trừ thuế thu nhập cá nhân 10% - 20% trên thu nhập hoa hồng của Thành Viên để thực hiện việc nộp thuế thay cho các thành viên.<br> 7.2. Thành viên đồng ý rằng BeRichMart có quyền<br> a) Thông báo cho các cơ quan có thẩm quyền của Việt Nam mọi thông tin liên quan đến việc bán hợp tác giữa BeRichMart và Thành viên; và <br> b) Nếu pháp luật quy định hoặc theo yêu cầu của các cơ quan thuế Việt Nam, BeRichMart sẽ thực hiệp việc thu các khoản thuế đến hạn áp dụng cho các hoạt động của Thành viên theo hợp đồng này và trực tiếp nộp các khoản thuế đó cho các cơ quan thuế của Việt Nam.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-checkbox-list">
+                                                        <label class="mt-checkbox mt-checkbox-outline">
+                                                            <input type="checkbox"> Tôi đã tìm hiểu về cách thức bảo mật và có trách nhiệm bảo mật thông tin về tên truy cập và mật khẩu sử dụng dịch vụ VCB- IB@nking của Ngân hàng TMCP Ngoại Thương Việt Nam cung cấp.
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-checkbox mt-checkbox-outline">
+                                                            <input type="checkbox"> Tôi đã đọc, hiểu rõ, đồng ý và cam kết tuân thủ các điều khoản, điều khiển của Hợp đồng sử dụng dịch vụ Ngân hàng điện tử. Hướng dẫn sử dụng dịch vụ VCB-iB@nking và các quy định, thông báo của Ngân hàng TMCP Ngoại Thương Việt Nam liên quan đến dịch vụ VCB-iB@nking
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+                                                    <p class="text-center">
+                                                        <button type="submit" class="btn blue btn-outline">Xác nhận</button>
+                                                    </p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- END PORTLET -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END PROFILE CONTENT -->
+                        </div>
+
+                </div>
+                <!-- END CONTENT BODY -->
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="page-footer-inner"> 2018 &copy; code by webviet24h </div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+    </div>
+    <!-- BEGIN QUICK NAV -->
+    <div class="quick-nav-overlay"></div>
+
+    <!-- END QUICK NAV -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="js/morris/morris.min.js" type="text/javascript"></script>
+    
+    <!-- scroll -->
+    <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+    <!-- data table -->
+    <script src="js/datatable.js" type="text/javascript"></script>
+    <script src="css/datatables/datatables.min.js" type="text/javascript"></script>
+    <script src="css/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+    <script src="js/table-datatables-colreorder.min.js" type="text/javascript"></script>
+    <!-- End data table -->
+
+    <!-- date time picker -->
+    <script src="js/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+
+    <script src="js/app.min.js" type="text/javascript"></script>
+    
+    <script src="js/components-date-time-pickers.min.js" type="text/javascript"></script><!-- date time picker -->
+    <script src="js/layout.min.js" type="text/javascript"></script>
+    <script src="js/quick-sidebar.min.js" type="text/javascript"></script>
+    <script src="js/quick-nav.min.js" type="text/javascript"></script>
+    <!-- END THEME LAYOUT SCRIPTS -->
+</body>
+
+</html>

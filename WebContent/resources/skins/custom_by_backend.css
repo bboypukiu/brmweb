@@ -1,0 +1,8 @@
+/*!
+ * css For Code Akr
+*/
+ @media (max-width: 1080px) {
+	.profile-sidebar .page-sidebar{
+		width: auto;
+	}
+}
